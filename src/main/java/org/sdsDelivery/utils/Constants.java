@@ -64,4 +64,9 @@ public class Constants {
     public static final String COURIERS_UPDATE_PAGE = "/pages/couriers/updateCourier.jsp";
     public static final String COURIERS_READ_PAGE = "/pages/couriers/readCourier.jsp";
     public static final String COURIERS_ERROR_PAGE = "/pages/errors/couriersError.jsp";
+
+    /**
+     * Couriers pages
+     */
+    public static final String PARCELS_CREATE_PAGE = "/pages/parcels/createParcels.jsp";
 }

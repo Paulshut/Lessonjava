@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static org.sdsDelivery.utils.Constants.PARCELS_CREATE_PAGE;
+
 @WebServlet(urlPatterns = "/parcels/create")
 public class createParcelsController extends HttpServlet {
     private final ParcelService parcelService = ParcelServiceImpl.getInstance();
@@ -19,7 +21,7 @@ public class createParcelsController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/pages/parcels/createParcels.jsp").forward(req, resp);
+        req.getRequestDispatcher(PARCELS_CREATE_PAGE).forward(req, resp);
     }
 
     @Override
